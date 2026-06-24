@@ -1,0 +1,109 @@
+/* Astolfo GTK theme - Feminine pink and purple theme */
+@import url("resource:///org/gnome/adwaita/gtk-main.css");
+
+/* Astolfo color palette */
+:root {
+    --astro-pink: #F48FB1;
+    --astro-pink-dark: #F06292;
+    --astro-pink-darker: #EC407A;
+    --astro-purple: #CE93D8;
+    --astro-purple-dark: #BA68C8;
+    --astro-light: #F8BBD0;
+    --astro-lightest: #FFFFFF;
+    --astro-bg: #FFFFFF;
+    --astro-bg-light: #F5F5F5;
+    --astro-text: #21212B;
+    --astro-text-light: #FFFFFF;
+}
+
+/* Button styles */
+.button {
+    background-color: var(--astro-pink);
+    color: var(--astro-text);
+    border-radius: 6px;
+    padding: 8px 16px;
+    border: none;
+    font-weight: 500;
+}
+.button:hover {
+    background-color: var(--astro-pink-dark);
+}
+.button:active {
+    background-color: var(--astro-pink-darker);
+}
+.button:disabled,
+s:destructive-action {
+    background-color: #E57373;
+}
+.button:destructive-action:hover {
+    background-color: #EF5350;
+}
+
+/* Entry fields */
+.entry {
+    background-color: var(--astro-bg);
+    color: var(--astro-text);
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+.entry:focus {
+    border-color: var(--astro-pink);
+    box-shadow: 0 0 0 2px rgba(244,143,177,0.2);
+}
+
+/* Header bar */
+.header-bar {
+    background-color: var(--astro-pink);
+    color: var(--astro-text-light);
+}
+
+/* Menu bar */
+.menubar {
+    background-color: var(--astro-pink);
+    color: var(--astro-text-light);
+}
+.menubar.menuitem {
+    color: var(--astro-text-light);
+}
+.menubar.menuitem:hover {
+    background-color: var(--astro-pink-dark);
+}
+
+/* Tooltip */
+.tooltip {
+    background-color: rgba(244,143,177,0.9);
+    color: var(--astro-text-light);
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+/* Scrollbars */
+.scrollbar {
+    background-color: var(--astro-bg-light);
+}
+.scrollbar.slider,
+.scrollbar.button {
+    background-color: var(--astro-pink);
+    border-radius: 4px;
+}
+.scrollbar.slider:hover,
+.scrollbar.button:hover {
+    background-color: var(--astro-pink-dark);
+}
+
+/* Switches */
+.switch {
+    width: 36px;
+    height: 20px;
+}
+.switch-slider {
+    background-color: #BDBDBD;
+    border-radius: 10px;
+}
+.switch-slider:checked {
+    background-color: var(--astro-pink);
+}
+.switch-slider:hover {
+    background-color: var(--astro-pink-dark);
+}

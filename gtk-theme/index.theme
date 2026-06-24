@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=HyperLandGTK
+Comment=Custom GTK theme for HyperLand desktop
+Type=X-GTK-Metadata
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=HyperLandGTK
+IconTheme=Papirus
+CursorTheme=Bibata-Modern-ICE
+ButtonLayout=:minimize,maximize,close
