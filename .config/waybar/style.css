@@ -1,0 +1,120 @@
+/* Astolfo Dots Waybar - Minimalist & Soft */
+* {
+  font-family: "JetBrains Mono", "Noto Sans", sans-serif;
+  font-size: 11px;
+  color: $text;
+  transition: all 0.2s ease;
+}
+
+window#waybar {
+  background: linear-gradient(135deg, $blush 0%, $lavender 50%, $baby_pink 70%);
+  border-radius: 10px;
+  border: 1px solid $lavender30;
+  box-shadow: 0 2px 8px rgba(230, 230, 250, 0.2);
+}
+
+/* Workspace buttons (dot-style) */
+#workspaces button {
+  padding: 2px 6px;
+  margin: 0 1px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  background: $transparent;
+  color: $text;
+  font-weight: bold;
+}
+
+#workspaces button.active {
+  background: $baby_pink20;
+  color: $baby_pink;
+  border: 1px solid $baby_pink40;
+  box-shadow: 0 0 6px rgba(255, 182, 193, 0.3);
+}
+
+#workspaces button.urgent {
+  background: $ff8c0020;
+  color: $ff8c00;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 140, 0, 0.4); }
+  50%      { box-shadow: 0 0 0 6px rgba(255, 140, 0, 0.2); }
+}
+
+/* Clock (soft dot separator) */
+#clock {
+  padding: 0 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: $blush;
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+/* DOT MODULES - THE CORE INNOVATION */
+#dot_cpu, #dot_memory, #dot_network, #dot_volume, #dot_music {
+  padding: 0 6px;
+  margin: 0 2px;
+  border-radius: 50%;
+  min-width: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "DejaVu Sans Mono", monospace;
+  background: $blush;
+  border: 1px solid $lavender30;
+}
+
+#dot_cpu { background: $blush; }
+#dot_memory { background: $lavender20; }
+#dot_network { background: $blush; }
+#dot_volume { background: $lavender20; }
+#dot_music { background: $blush; }
+
+/* Hover effects for dot modules */
+#dot_cpu:hover,
+#dot_memory:hover,
+#dot_network:hover,
+#dot_volume:hover,
+#dot_music:hover {
+  background: $lavender;
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(230, 230, 250, 0.3);
+}
+
+/* Tray (minimal dots) */
+#tray {
+  padding: 0 6px;
+  border-radius: 50%;
+  min-width: 24px;
+  background: $blush;
+}
+
+#tray:hover {
+  background: $lavender;
+}
+
+/* Power menu (simple dot) */
+#powermenu {
+  padding: 0 6px;
+  margin: 0 2px;
+  border-radius: 50%;
+  min-width: 24px;
+  background: $baby_pink20;
+}
+
+#powermenu:hover {
+  background: $baby_pink;
+  transform: scale(1.1);
+}
+
+/* Universal hover transition */
+#workspaces button:hover,
+#clock:hover,
+#tray:hover,
+#powermenu:hover {
+  transition: all 0.15s ease;
+}

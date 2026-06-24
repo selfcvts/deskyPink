@@ -1,0 +1,47 @@
+[general]
+layers = 3
+width = 380
+height = 320
+margin-top = 90
+margin-left = 510
+opacity = 95
+border-size = 1
+border-color = #ffb6c140
+background-color = #ffffff08
+textcolor = #333333
+selected-background-color = #ffb6c130
+selected-text-color = #ffffff
+hover-background-color = #ffb6c120
+hover-text-color = #ffffff
+cursor-background = #ffb6c1
+cursor-foreground = #ffffff
+exec-delay = 0.08
+allow-images = true
+allow-markup = true
+rounding = 14
+scroll-method = 1
+cache = false
+cmd-height = 38
+
+[bindings]
+switch-to-next = Tab
+switch-to-prev = Shift+Tab
+activate = Return
+activate-alt = Shift+Return
+close = Escape
+close-alt = q
+movelineup = Up
+movelinedown = Down
+movepageup = PageUp
+movepagedown = PageDown
+movestartofbuffer = Home
+movendoffbuffer = End
+historyup = Ctrl+p
+historydown = Ctrl+n
+backspace = BackSpace
+delete = Delete
+insert-space = space
+toggle-always-accept = a
+toggle-ignore-case = i
+toggle-hide-preview = p
+application-switcher = Escape

@@ -1,0 +1,26 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "spacing": 6,
+  "margin-top": 3,
+  "margin-bottom": 3,
+  "margin-left": 3,
+  "margin-right": 3,
+  "modules-left": [
+    "workspace",
+    "mode"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "dot_cpu",
+    "dot_memory",
+    "dot_network",
+    "dot_volume",
+    "dot_music",
+    "tray",
+    "powermenu"
+  ]
+}
